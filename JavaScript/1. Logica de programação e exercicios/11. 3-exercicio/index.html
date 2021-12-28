@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        
+        <script>
+
+            var numero1 = parseInt(prompt("Informe o primeiro número: "));
+            
+            var sinal = prompt('Informe o sinal da operação: ');
+            while(sinal != "-" && sinal != "+" && sinal != "/" && sinal != "*"){
+                alert("Por favor insira um sinal valido!");
+                var sinal = prompt('Informe o sinal da operação: ')
+            }
+            var numero2 = parseInt(prompt("Informe o segundo número: "));
+
+            if(sinal == "-"){
+                var resultado = numero1 - numero2;
+            }
+            else if(sinal == "+"){
+                var resultado = numero1 + numero2;
+            }
+            else if(sinal == "*"){
+                var resultado = numero1 * numero2;
+            }
+            else if(sinal == "/"){
+                var resultado = numero1 / numero2;
+            }
+            else{
+                alert("Você colocou algo errado")
+            }
+
+            alert("O resultado final foi: " + resultado)
+
+        </script>
+    </body>
+</html>

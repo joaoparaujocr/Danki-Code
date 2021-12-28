@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+
+html, body {
+    height: 100%;
+}
+
+.clear {clear: both;}
+
+.center {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #44609c;
+    width: 100%;
+}
+
+header .logo{
+    float: left;
+    margin: 30px 0 10px 0;
+    color: white;
+    font-size: 20px;
+}
+
+form.login{
+    float: right;
+}
+
+form.login .input-login{
+    display: inline-block;
+    margin-top: 9px;
+}
+
+.input-login > label{
+    display: block;
+    color: white;
+    font-size: 13px;
+    margin-bottom: 3px;
+}
+
+.input-login > input{
+    padding-left: 3px;
+    outline: 0;
+}
+
+.entrar{
+    display: inline-block;
+}
+
+.entrar input[type=submit]{
+    background-color: #454f7c;
+    border: 0;
+    padding: 3px;
+    color: white;
+    cursor: pointer;
+}
+
+.entrar input[type=submit]:hover{
+    background-color: hsl(229, 47%, 48%);
+    border: 0;
+    padding: 3px;
+    color: white;
+}
+
+.login a{
+    margin-top: 7px;
+    display: inline-block;
+    color: white;
+    font-size: 11px;
+    text-decoration: none;
+    position: relative;
+    left: 170px;
+}
+
+.login a:hover{
+    text-decoration: underline;
+}
+
+section.main{
+    background: linear-gradient(white, #D3D8E8);
+    width: 100%;
+    padding: 20px 0;
+}
+
+.img-fluxo{
+    width: 50%;
+    float: left;
+}
+
+.img-fluxo h2{
+    font-size: 21px;
+    font-weight: 500;
+}
+
+.img-fluxo img{
+    width: 100%;
+}
+
+.abrir-conta{
+    float: right;
+    width: 50%;
+    padding-left: 27px;
+}
+
+.abrir-conta h2{
+    font-size: 30px;
+}
+
+.abrir-conta h4{
+     margin: 5px 0 9px 0;
+}
+
+.criar-conta .w50{
+    width: 50%;
+    float: left;
+    padding: 0 10px 12px  0 ;
+}
+
+.criar-conta .w50:nth-child(2){
+    padding-right: 0;
+}
+
+.criar-conta .w100{
+    margin-top: 12px;
+}
+
+.criar-conta input{
+    width: 100%;
+}
+
+.w50 input[type=text],
+.w100 input[type=email],
+.w100 input[type=password]{
+    height: 45px;
+    font-size: 20px;
+    padding-left: 5px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.w100 input[type=submit]{
+    width: 200px;
+    height: 40px;
+    background: linear-gradient(#67ae55, #578843);
+    border-radius: 5px;
+    border: 0;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+form .w100 h2{
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.w100 .nascimento{
+    float: left;
+    margin-top: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+select.nascimento {
+    height: 30px;
+}
+
+.input-radio{
+    float: left;
+    margin: 20px 25px;
+}
+
+.input-radio input[type=radio]{
+    width: auto !important;
+}
+
+.input-radio label{
+    display: inline-block;
+    font-size: 20px;
+}
+
+footer{
+    padding: 30px 0;
+}
+
+footer .center{
+    border-bottom: 1px solid #44609c;
+    padding: 0 8px 20px 8px;
+}
+
+footer .center a{
+    color: #44609c;
+    font-size: 12px;
+    padding-right: 13px;
+}
+
+@media screen and (max-width: 950px) {
+    .center{
+        padding: 0 2%;
+    }
+}
+
+@media screen and (max-width: 500px){
+
+    header .logo{
+        width: 100%;
+        text-align: center;
+        display: inline-block;
+        float: none;
+    }
+
+    .logo h2{
+        text-align: center;
+    }
+
+    form.login{
+        float: none;
+    }
+
+    .img-fluxo{
+        width: 100%;
+        float: none;
+    }
+
+    .abrir-conta{
+        float: none;
+        width: 100%;
+        padding-left: 27px;
+    }
+
+    .img-fluxo{
+        display: none;
+    }
+}

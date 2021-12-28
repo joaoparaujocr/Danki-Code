@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <script>
+            var nome = ['guilherme', 'felipe', 'joão'];
+            //var nome = new Array('joao', 'felipe')
+
+            //Substituir o item por outro, no Array
+            nome[0] = 'paulo'
+            console.log(nome);
+
+            //adiciona um item no final do Array
+            nome.push('Gustavo');
+            console.log(nome);
+
+            //Remover item ao final do Array
+            nome.pop();
+            console.log(nome);
+
+            //Remover item no inicio do Array
+            nome.shift();
+            console.log(nome);
+
+            //Adicionar item no inicio do Array
+            nome.unshift("paulo");
+            console.log(nome);
+
+            //Procurar o índice de um item no Array
+            var pos = nome.indexOf("joão");
+            console.log(pos)
+
+            //Remover item pela posição do item
+            nome.splice(1, 1)
+            console.log(nome)
+        </script>
+    </body>
+</html>

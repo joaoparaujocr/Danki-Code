@@ -1,0 +1,22 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    height: 100%;
+}
+
+.bg{
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+
+    /*Backgrounds*/
+
+    background-color: red;
+    background-image: url("../imagens/danki_bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}

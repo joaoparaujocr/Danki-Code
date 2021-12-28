@@ -1,0 +1,13 @@
+body{
+    background-color: blue;
+}
+
+_:-ms-lang(), body{
+    background-color: black;
+}
+
+@-moz-document url-prefix() {
+    body{
+        background-color: green;
+    }
+}

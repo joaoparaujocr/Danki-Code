@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+}
+
+html, body{
+    height: 100%;
+}
+
+/* Classes gerais */
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.clear{clear: both;}
+/* *************** */
+
+/* Header */
+header{
+    padding: 20px 2%;
+}
+
+.logo img{
+    width: 234px;
+    float: left;
+}
+/* ************** */
+
+/* Header */
+header nav{
+    float: right;
+    margin-top: 15px;
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav li{
+    float: left;
+    margin: 0 20px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #b4b4b4;
+}
+/* ********************* */
+
+/* Mosaico */
+.mosaico-single{
+    float: left;
+    width: calc(100% / 6);
+}
+
+.img-mosaico-single{
+    width: 100%;
+    padding-top: 100%;
+    border: 5px solid white;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.mosaico-single:nth-of-type(1) .img-mosaico-single:nth-of-type(1){
+    background-image: url(../images/img1.jpg);
+}
+
+.mosaico-single:nth-of-type(1) .img-mosaico-single:nth-of-type(2){
+    background-image: url(../images/img2.jpg);
+}
+
+.mosaico-single:nth-of-type(2) .img-mosaico-single:nth-of-type(1){
+    background-image: url(../images/img8.jpg);
+}
+
+.mosaico-single:nth-of-type(2) .img-mosaico-single:nth-of-type(2){
+    background-image: url(../images/img4.jpg);
+}
+
+.mosaico-single:nth-of-type(3) .img-mosaico-single:nth-of-type(1){
+    background-image: url(../images/img3.jpg);
+}
+
+.mosaico-single:nth-of-type(3) .img-mosaico-single:nth-of-type(2){
+    background-image: url(../images/img5.jpg);
+}
+
+.mosaico-single:nth-of-type(4) .img-mosaico-single:nth-of-type(1){
+    background-image: url(../images/img6.jpg);
+}
+
+.mosaico-single:nth-of-type(4) .img-mosaico-single:nth-of-type(2){
+    background-image: url(../images/img7.jpg);
+}
+
+.mosaico-single:nth-of-type(5) .img-mosaico-single:nth-of-type(1){
+    background-image: url(../images/img10.jpg);
+}
+
+.mosaico-single:nth-of-type(5) .img-mosaico-single:nth-of-type(2){
+    background-image: url(../images/img9.jpg);
+}
+
+.mosaico-single:nth-of-type(6) .img-mosaico-single:nth-of-type(1){
+    background-image: url(../images/img11.jpg);
+}
+
+.mosaico-single:nth-of-type(6) .img-mosaico-single:nth-of-type(2){
+    background-image: url(../images/img12.jpg);
+}
+/* ********************************************** */
+
+/* Section Serviços */
+section.servico > .container{
+    display: flex;
+    max-width: 800px;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    bottom: 42px;
+}
+
+.box-servico{
+    color: white;
+    text-align: center;
+    background-image: url(../images/icone_dente.png);
+    background-size: 12px 12px;
+    background-position: 50% 95%;
+    background-repeat: no-repeat;
+}
+
+.box-servico h2{
+    font-weight: normal;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.box-servico p{
+    font-weight: normal;
+    font-size: 13px;
+    margin-top: 12px;
+}
+
+section.servico .box-servico:nth-of-type(1),
+section.servico .box-servico:nth-of-type(3){
+    width: 30%;
+    padding: 30px 2%;
+    background-color: #576975;
+}
+
+section.servico .box-servico:nth-of-type(2){
+    padding: 60px 2%;
+    width: 40%;
+    background-color: #688293;
+    background-image: none;
+}

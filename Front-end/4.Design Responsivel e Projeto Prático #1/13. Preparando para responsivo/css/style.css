@@ -1,0 +1,188 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Kanit";
+}
+
+html, body{
+    height: 100%;
+}
+
+.clear{
+    clear: both;
+}
+
+.center{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*header*/
+.header{
+    background-color: #212343;
+    width: 100%;
+    padding: 0 2%;
+    height: 90px;
+}
+
+.header img{
+    margin: 30px;
+}
+
+/*container-banner*/
+.container-banner{
+    background-image: url(../images/header_bg.png);
+    height: 500px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    padding: 0 2%;
+}
+
+.container-banner > .center{
+    height: 100%;
+}
+
+.form{
+    background-color: white;
+    width: 400px;
+    height: calc(100% + 50px);
+    position: relative;
+    top: -25px;
+    float: right;
+    border: 10px solid rgba(204, 204, 204, 0.39);
+    background-clip: padding-box;
+    padding: 10px;
+}
+
+.form h2{
+    text-align: center;
+    color: rgb(114, 114, 114);
+    font-weight: normal;
+}
+
+.input-text{
+    margin-bottom: 20px;
+}
+
+.input-text label{
+    display: inline-block;
+    width: 100%;
+    font-size: 24px;
+    color: rgb(182, 182, 182);
+}
+
+.input-text input[type=text]{
+    width: 100%;
+    outline: none;
+    height: 50px;
+    font-size: 20px;
+}
+
+form h2{
+    color: rgb(196, 222, 255);
+    position: relative;
+    text-align: left;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.input-submit{
+    text-align: center;
+}
+
+.input-submit input[type=submit]{
+    background-color: #262343;
+    border: 0;
+    width: 200px;
+    height: 50px;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.input-submit input[type=submit]:hover{
+    background-color: #1d1b31;
+}
+
+.list{
+    float: left;
+    margin-top: 12%;
+    height: 200px;
+    width: 600px;
+    background-color: #1d1b318a;
+    text-align: center;
+}
+
+.list ul{
+    margin-top: 50px;
+    list-style-position: inside;
+}
+
+.list li{
+    margin-bottom: 14px;
+    color: white;
+}
+/*Fim do container-banner*/
+
+/*container-2*/
+.container-2{
+    width: 100%;
+    background-color: rgb(168, 168, 168);
+    text-align: center;
+    padding: 50px 2%;
+}
+
+.container-2 h2{
+    font-weight: 600;
+}
+
+.container-2 p{
+    display: inline-block;
+    width: 100%;
+    text-align: justify;
+}
+
+.arrow{
+    background-image: url(../images/arrow.png);
+    width: 64px;
+    height: 64px;
+    position: relative;
+    top: 82px;
+    margin: 0 auto;
+}
+/*Fim do container-2*/
+
+.container-3{
+    width: 100%;
+    padding: 90px 2%;
+}
+
+.container-3 h2{
+    padding-top: 50px;
+    text-align: center;
+    color: gray;
+    font-weight: normal;
+}
+
+.box{
+    padding: 20px;
+    text-align: center;
+    width: 33.3%;
+    float: left;
+}
+
+.box p{
+    text-align: justify;
+}
+
+.footer{
+    border-top: 3px #1d1b31 solid;
+    height: 100px;
+    text-align: center;
+    color: rgb(172, 172, 172);
+    font-size: 20px;
+    padding: 20px;
+}

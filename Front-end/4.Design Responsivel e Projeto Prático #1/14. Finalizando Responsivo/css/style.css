@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kanit";
+}
+
+html, body{
+    height: 100%;
+}
+
+.clear{
+    clear: both;
+}
+
+.center{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header{
+    background-color: #212343;
+    width: 100%;
+    height: 90px;
+    padding: 0 2%;
+}
+
+.header img{
+    margin: 30px;
+}
+
+.container-banner{
+    background-image: url(../images/header_bg.png);
+    width: 100%;
+    height: 520px;
+    background-size: cover;
+    background-position: center;
+    padding: 0 2%;
+}
+
+.container-banner > .center{
+    height: 100%;
+}
+
+.form{
+    width: 400px;
+    height: calc(100% + 60px);
+    border: 10px solid rgba(161, 161, 161, 0.349);
+    background-clip: padding-box;
+    position: relative;
+    top: -30px;
+    background-color: white;
+    float: right;
+    padding: 20px;
+}
+
+.form h2{
+    color: #ccc;
+    font-weight: normal;
+    text-align: center;
+    font-size: 22px;
+}
+
+.input-text{
+    margin-top: 20px;
+}
+
+.input-text label{
+    display: inline-block;
+    width: 100%;
+    font-size: 20px;
+    color: rgb(116, 114, 114);
+}
+
+.input-text input[type=text]{
+    width: 100%;
+    height: 50px;
+    outline: none;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+form p{
+    color: gray;
+    font-size: 20px;
+}
+
+.input-submit{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.input-submit input[type=submit]{
+    background-color: #212343;
+    width: 200px;
+    height: 50px;
+    border: 0;
+    display: inline-block;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.input-submit input[type=submit]:hover{
+    background-color: #15172e;
+}
+
+.list{
+    background-color: #21234370;
+    width: 590px;
+    float: left;
+    height: 200px;
+    margin-top: 160px;
+    padding-top: 20px;
+}
+
+.list li{
+    list-style-position: inside;
+    padding: 0 7%;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.container-2{
+    width: 100%;
+    text-align: center;
+    padding-top: 70px;
+    padding-left: 2%;
+    padding-right: 2%;
+    background-color: #ccc;
+}
+
+.container-2 h2{
+    color: #15172e;
+    font-weight: normal;
+}
+
+.container-2 p{
+    display: inline-block;
+    width: 100%;
+    max-width: 780px;
+    text-align: justify;
+}
+
+.arrow{
+    background-image: url(../images/arrow.png);
+    width: 64px;
+    height: 64px;
+    position: relative;
+    top: 32px;
+    margin: 0 auto;
+}
+
+.container-3{
+    text-align: center;
+    width: 100%;
+}
+
+.container-3 h2{
+    color: #15172e;
+    padding-top: 60px;
+}
+
+.box{
+    margin-top: 30px;
+    padding: 15px;
+    width: 33.3%;
+    float: left;
+}
+
+.box p{
+    text-align: justify;
+}
+
+.footer{
+    width: 100%;
+    text-align: center;
+    border-top: #15172e solid 4px;
+    padding: 30px;
+    color: gray;
+}
+
+@media screen and (max-width: 1090px){
+    .header{
+        height: auto;
+        text-align: center;
+        padding: 15px 0;
+        width: 100%;
+    }
+
+    .header img{
+        margin: 0;
+    }
+
+    .container-banner{
+        width: 100%;
+        height: auto;
+        padding: 40px 2%;
+        text-align: center;
+    }
+
+    .form{
+        max-width: 400px;
+        float: none;
+        display: inline-block;
+        height: 100%;
+        width: 90%;
+        top: 0;
+        margin-top: 30px;
+    }
+
+    .list{
+        float: none;
+        width: 90%;
+        display: inline-block;
+        max-width: 630px;
+        height: auto;
+        padding: 30px 0;
+        margin-top: 30px;
+    }
+
+    .input-submit input[type=submit]{
+        background-color: #212343;
+        width: 100%;
+        height: 50px;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 780px){
+    .container-2 p{
+        display: inline-block;
+        width: 100%;
+        padding: 0 3%;
+        text-align: justify;
+    }
+
+    .box{
+        float: none;
+        display: inline-block;
+        max-width: 600px;
+        width: 100%;
+    }
+
+}

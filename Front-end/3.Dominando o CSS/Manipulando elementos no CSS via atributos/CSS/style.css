@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+}
+/*
+input[type="text"]{
+    background-color: green;
+}
+*/
+
+input.text[type=text]{
+    background-color: green;
+}
+
+input[type="submit"]{
+    background-color: blue;
+}
+/*
+a[href="http://www.google.com"]{
+    background-color: yellow;
+}
+
+[href="http://www.google.com"]{
+    background-color: red;
+}*/
+
+/*
+a[href*="google"]{
+    background-color: gray;
+}*/
+
+
+/*Procure entre os espaços atributos
+a[attr~="google"]{
+    background-color: chartreuse;
+}*/
+
+/*Ache a palavra em qualquer lugar
+a[attr*="google"]{
+    background-color: chartreuse;
+}*/
+
+/*Quando temos a palavra google seguido de um hifem e outra palavra
+a[attribute|="google"]{
+    background-color: yellow;
+}*/
+
+/*Quando começamos com a palavra que desejamos
+a[attribute^="goo"]{
+    background-color: red;
+}*/
+
+/*Quando terminamos com a palavra que desejamos
+a[attribute$="google"]{
+    background-color: yellow;
+}*/

@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Kanit";
+    box-sizing: border-box;
+}
+
+body, html{
+    height: 100%;
+}
+
+.clear{
+    clear: both;
+}
+
+.center{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    background-color: #262343;
+    width: 100%;
+    min-width: 1200px;
+    height: 90px;
+}
+
+.header img{
+    margin: 30px;
+}
+
+.container-banner{
+    background-image:url(../images/header_bg.png);
+    width: 100%;
+    min-width: 1200px;
+    height: 530px;
+}
+
+.container-banner > .center{
+    height: 100%;
+}
+
+.form{
+    background-color: white;
+    width: 400px;
+    height: calc(100% + 40px);
+    padding: 10px;
+    float: right;
+    position: relative;
+    top: -20px;
+    background-clip: padding-box;
+    border: rgba(109, 109, 109, 0.466) 10px solid;
+}
+
+.form h2{
+    color: #CCC;
+    font-weight: normal;
+    text-align: center;
+    font-size: 22px;
+}
+
+.input-text{
+    margin-top: 20px;
+}
+
+.input-text label{
+    color: #ccc;
+    display: inline-block;
+    width: 100%;
+    font-size: 22px;
+}
+
+.input-text input[type=text], form p{
+    width: 100%;
+    height: 47px;
+    outline: none;
+    color: #CCC;
+    font-size: 18px;
+}
+
+form p{
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+.submit{
+    text-align: center;
+}
+
+.submit input[type=submit]{
+    color: white;
+    background-color: #262343;
+    border: 0;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.submit input[type=submit]:hover{
+    background-color: #131222;
+}
+
+.list{
+    background-color: #26234371;
+    width: 700px;
+    margin-top: 40px;
+    height: 200px;
+    padding: 40px;
+    float: left;
+}
+
+.list ul{
+    list-style-position: inside;
+}
+
+.list li{
+    margin-bottom: 20px;
+    color: white;
+}
+
+.container-2{
+    width: 100%;
+    min-width: 1200px;
+    background-color: #ccc;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.container-2 p{
+    display: inline-block;
+    text-align: justify;
+    width: 700px;
+}
+
+.arrow{
+    background-image: url(../images/arrow.png);
+    width: 64px;
+    height: 64px;
+    position: relative;
+    top: 32px;
+    left: calc(50% - 32px);
+}
+
+.section h2{
+    color: #262343;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.section-one{
+    text-align: center;
+    width: 33.3%;
+    padding: 50px;
+    float: left;
+}
+
+.section-one h2{
+    margin-bottom: 10px;
+    
+}
+
+.section-one p{
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+.footer{
+    border-top: #131222 4px solid;
+    padding: 40px;
+    text-align: center;
+    width: 100%;
+    min-width: 1200px;
+}
+
+.footer p{
+    margin-top: 10px;
+    color: #26234371;
+}

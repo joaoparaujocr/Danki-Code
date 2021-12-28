@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+}
+
+input[type=file]{
+    display: none;
+}
+
+/*
+form label{
+    display: block;
+    margin: 0 auto;
+    width: 220px;
+    height: 40px;
+    background-color: #ccc;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    margin-top: 20px;
+}*/
+
+form{
+    text-align: center;
+    background-color: #ccc;
+    padding: 30px 0;
+}
+
+/*
+form select{
+    width: 220px;
+    height: 30px;
+    border: 0;
+    padding-left: 10px;
+    appearance: none;
+    background-image: url(../imagens/sprite.png);
+    background-size: 10px 20px;
+    background-repeat: no-repeat;
+    background-position: 98% 50%;
+}
+
+select::-ms-expand{
+    appearance: none;
+}*/
+
+input[type=checkbox]{
+    display: none;
+}
+
+label{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: green;
+}
+
+input[type=checkbox]:checked + label{
+    width: 30px;
+    height: 30px;
+    background-color: red;
+}

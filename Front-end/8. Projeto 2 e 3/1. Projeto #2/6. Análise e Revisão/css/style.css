@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Karla";
+}
+
+.clear{clear: both;}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header{
+    width: 100%;
+    background-color: gray;
+    padding: 30px 2%;
+}
+
+.logo{
+    background-image: url(../images/logo1.png);
+    width: 190px;
+    height: 90px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+    float: left;
+}
+
+header .container .logo:nth-last-child(2){
+    float: right;
+    background-image: url(../images/logo2.png);
+}
+
+.bg{
+    background-image: url(../images/bg-form.jpg);
+    background-position: center;
+    height: 480px;
+    width: 100%;
+    position: relative;
+}
+
+.container-form{
+    background-color: white;
+    position: absolute;
+    max-width: 400px;
+    width: 100%;
+    height: 110%;
+    top: -5%;
+    right: 35px;
+}
+
+.container-form h2{
+    padding: 20px;
+    color: black;
+    background-color: rgba(59, 59, 59, 0.712);
+    font-size: 25px;
+    text-align: center;
+    font-weight: normal;
+}
+
+.container-form form{
+    padding: 20px;
+}
+
+.container-form form label{
+    cursor: pointer;
+    font-size: 22px;
+    margin-bottom: 4px;
+}
+
+.container-form form input[type=text],
+.container-form form input[type=email]{
+    width: 100%;
+    height: 45px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    outline: none;
+    line-height: 45px;
+    padding-left: 4px;
+}
+
+.container-form form input[type=submit]{
+    display: inline-block;
+    width: 100%;
+    height: 45px;
+    background-color: black;
+    color: white;
+    border: 0;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.container-form form p{
+    margin-top: 25px;
+    font-size: 18px;
+}
+
+.arrow{
+    background-image: url(../images/arrow.png);
+    position: absolute;
+    bottom: -32px;
+    left: calc(50% - 32px);
+    width: 64px;
+    height: 64px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+section.chamada .container{
+    padding: 40px 2%;
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+
+.box-text-and-image{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1px;
+}
+
+.box-text-and-image:nth-child(2n){
+    flex-direction: row-reverse;
+}
+
+.box-text{
+    width: 40%;
+    padding: 70px 30px;
+    text-align: center;
+    background-color: rgb(105, 105, 105);
+    color: white;
+    font-weight: normal;
+}
+
+.box-image{
+    background-image: url(../images/mosaico1.jpg);
+    width: 60%;
+    background-size: cover;
+    background-position: center;
+    border-left: 1px solid white;
+}
+
+.box-text-and-image:nth-of-type(2) .box-image{
+    background-image: url(../images/mosaico2.jpg);
+}
+.box-text-and-image:nth-of-type(3) .box-image{
+    background-image: url(../images/mosaico3.jpg);
+}
+.box-text-and-image:nth-of-type(4) .box-image{
+    background-image: url(../images/mosaico4.jpg);
+}
+
+.box-text-and-image:nth-child(2n) .box-image{
+    border-left: 0;
+    border-right: 1px solid white;
+}
+
+footer{
+    text-align: center;
+    padding: 30px 0;
+    border-top: 1px solid black;
+    margin-top: 1px;
+}
+
+@media screen and (max-width: 980px) {
+    .bg{
+        height: auto;
+        text-align: center;
+        padding: 40px 2%;
+    }
+
+    .container-form{
+        display: inline-block;
+        height: 100%;
+        position: static;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container .box-text-and-image{
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .box-text-and-image .box-text{
+        width: 100%;
+        padding: 20px;
+    }
+
+    section.mosaico .container .box-text-and-image .box-image{
+        padding-top: 70%;
+        width: 100%;
+        border: 0;
+    }
+}

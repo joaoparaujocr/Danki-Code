@@ -1,0 +1,24 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    height: 100%;
+}
+
+.box{
+    width: 40%;
+    height: 300px;
+    color:gray;
+}
+
+.box p{
+    color: initial;
+}
+/*
+@media screen and (max-width: 480px){
+    .box{
+        height: auto;
+    }
+}*/

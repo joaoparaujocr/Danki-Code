@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald";
+}
+
+html, body{
+    height: 100%;
+}
+
+/* Classes gerais */
+.clear{clear: both;}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* *************** */
+
+/* Header */
+header{
+    padding: 20px 2%;
+    height: 130px;
+}
+
+header .logo{
+    float: left;
+}
+
+nav.mobile{
+    display: none;
+}
+
+header nav.desktop{
+    float: right;
+    position: relative;
+    top: 30px;
+}
+
+header nav.desktop ul{
+    list-style-type: none;
+    list-style-position: inside;
+}
+
+header nav.desktop li{
+    float: left;
+    padding: 0 35px;
+}
+
+header nav.desktop a{
+    text-align: none;
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+    font-style: italic;
+}
+/* ********************* */
+
+/* Section banner */
+section.banner{
+    width: 100%;
+    background-color: black;
+    height: calc(100vh - 130px);
+    background-image: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: contain;
+    overflow: hidden;
+}
+
+section.banner .container{
+    padding: 0 2%;
+}
+
+.text-banner{
+    padding: 10%;
+}
+
+.box-text{
+    margin-top: 10px;
+    width: 250px;
+    height: 50px;
+    background-image: url(../images/box-text.png);
+    background-size: 100% 100%;
+    color: white;
+    font-size: 30px;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+
+.box-text p{
+    text-align: center;
+}
+
+.text-banner .box-text:nth-of-type(2){
+    display: inline-block;
+    position: relative;
+    right: 9px;
+    width: 200px;
+}
+
+.text-banner .box-text:nth-of-type(3){
+    width: 160px;
+    position: relative;
+    right: 17px;
+}
+
+.text-banner .box-text:nth-of-type(4){
+    width: 330px;
+    background-image: url(../images/box-white-text.png);
+    position: relative;
+    right: 27px;
+    color: black;
+}
+/* ************************** */
+
+/* Section veiculos em destaque */
+section.veiculos-destaque{
+    padding: 90px 2%;
+}
+
+.line-titulo{
+    text-align: center;
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: green;
+}
+
+.ln-1{
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: black;
+}
+
+section.veiculos-destaque h2{
+    position: relative;
+    background-color: white;
+    display: inline-block;
+    text-align: center;
+    font-size: 24px;
+    font-style: italic;
+    text-transform: uppercase;
+    bottom: 20px;
+    z-index: 4;
+    padding: 0 20px;
+}
+
+@media screen and (max-width: 900px){
+    section.banner{
+        width: 100%;
+        height: calc(80vh - 130px);
+        background-position:50%;
+        background-size: cover;
+    }
+
+   
+}
+
+@media screen and (max-width: 750px){
+    nav.desktop{
+        display: none;
+    }
+
+    nav.mobile{
+        background-image: url(../images/icon_menu.png);
+        width: 40px;
+        height: 40px;
+        display: block;
+        float: right;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        cursor: pointer;
+        margin-top: 28px;
+    }
+
+    nav.mobile ul{
+        position: absolute;
+        left: 0;
+        top: 120px;
+        width: 100%;
+        background-color: white;
+        list-style-type: none;
+        text-align: center;
+        z-index: 4;
+        display: none;
+    }
+
+    nav.mobile:hover ul{
+        display: block;
+    }
+
+    nav.mobile li{
+        font-size: 20px;
+        padding: 5px 0;
+        font-style: italic;
+    }
+
+    nav.mobile a{
+        text-decoration: none;
+        color: black;
+    }
+}
+
+@media screen and (max-width:400px){
+    .text-banner{
+        padding: 10%;
+    }
+    
+    .box-text{
+        width: 140px;
+        height: 40px;
+        font-size: 20px;
+        line-height: 40px;
+    }
+    
+    .text-banner .box-text:nth-of-type(2){
+        width: 120px;
+    }
+    
+    .text-banner .box-text:nth-of-type(3){
+        width: 100px;
+    }
+
+    .text-banner .box-text:nth-of-type(4){
+        width: 220px;
+        height: 40px;
+        background-image: url(../images/box-white-text.png);
+        position: relative;
+        right: 27px;
+        color: black;
+        font-size: 20px;
+        line-height: 40px;
+    }
+}
+

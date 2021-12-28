@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.text-white{
+    color: white;
+}
+
+.gold{
+    background-color: gold;
+}
+
+.light-blue{
+    background-color: lightblue;
+}
+
+section.container{
+    width: 100%;
+}
+
+div.flex{
+    display: flex;
+    max-width:960px;
+    padding: 0 2%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+div.w33{
+    width: calc(100% / 3);
+}
+
+div.w50{
+    width: 50%;
+}
+
+div.w100{
+    width: 100%;
+}
+
+header.topo-site{
+    padding: 20px 0;
+}
+
+.logo{
+    font-size: 23px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header.topo-site ul li{
+    display: inline-block;
+    font-size: 17px;
+    padding: 0 20px;
+    position: relative;
+    top: 8px;
+}
+
+header.topo-site a{
+    text-decoration: none;
+}
+
+.left{
+    text-align: left;
+}
+
+.right{
+    text-align: right;
+}
+
+.slider{
+    min-height: 500px;
+}
+
+.slider p{
+    font-size: 23px;
+    color: white;
+    border-bottom: 3px solid rgb(32, 7, 7);
+    display: inline-block;
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative;
+}
+
+.center{
+    text-align: center;
+}
+
+.promo{
+    padding: 40px 0;
+}
+
+@media screen and (max-width: 768px){
+    div.w50{
+        width: 100%;
+    }
+
+    .left, .right{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}

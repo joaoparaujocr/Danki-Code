@@ -1,0 +1,15 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.artigo{
+    width: 1280px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.artigo h1{
+    color: rgb(62, 142, 218);
+    font-size: 1em;
+}

@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.table{
+    display: table;
+    width: 900px;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.table-row{
+    display: table-row;
+
+}
+
+.table-cel{
+    border: 1px solid black;
+    display: table-cell;
+    padding: 10px;
+    height: 400px;
+    vertical-align: middle;
+    text-align: center;
+}

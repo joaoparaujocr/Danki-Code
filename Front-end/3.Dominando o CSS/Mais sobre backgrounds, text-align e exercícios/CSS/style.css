@@ -1,0 +1,52 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    height: 100%;
+}
+
+.bg{
+
+    /*
+    width: 100%;
+    margin: 0 auto;
+    height: 430vh;
+    background-image:url(../imagens/sunset.jpg) ;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: red;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;*/
+}
+
+.box{
+    width: 100%;
+    margin: 80px auto;
+    text-align: center;
+    background-color: grey;
+}
+
+.item{
+    width: 33.3%;
+    margin-right: -4px;
+    display: inline-block;
+}
+
+.item img{
+    width: 30%;
+}
+
+.item p{
+    text-align: left;
+    display: inline-block;
+    background: purple;
+}
+
+.last{
+    margin-right: 0;
+}

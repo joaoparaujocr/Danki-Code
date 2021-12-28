@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+}
+
+form{
+    width: 96%;
+    max-width: 600px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+form fieldset{
+    padding: 20px 40px;
+    border: 4px rgb(29, 112, 207) solid;
+}
+
+form legend{
+    font-size: 17px;
+    color: grey;
+    text-align: left;
+}
+
+form input[type=text]{
+    display: inline-block;
+    margin-top: 30px;
+    width: 80%;
+    padding: 10px 13px;
+    border: 1px solid #ccc;
+}
+
+form input[type=text]:focus, form select:focus{
+    outline: 0
+}
+
+form select{
+    color: darkslategrey;
+    width:calc(80% + 26px);
+    margin-top: 30px;
+    display: inline-block;
+    padding: 10px 13px;
+    border: 1px solid #ccc;
+}
+/*
+form select option{
+    color: red;
+}*/
+
+form h2{
+    margin-top: 20px;
+    color: grey;
+}
+
+.input{
+    margin-top: 20px;
+    text-align: left;
+    display: inline-block;
+}
+
+.input span{
+    margin-left: 13px;
+    font-size: 16px;
+    color: grey;
+}
+
+form input[type="submit"]{
+    margin-top: 30px;
+    background-color: darkslategrey;
+    color: white;
+    border-radius: 0;
+    padding: 10px;
+}
+
+form input[type="submit"]:hover{
+    background-color: rgb(29, 112, 207);
+    color: black;
+    font-weight: bolder;
+    outline: 0;
+    cursor: pointer;
+}
+
+form textarea{
+    margin-top: 30px;
+    width: 80%;
+    padding: 10px 13px;
+    resize: none;
+    height: 140px;
+}
+

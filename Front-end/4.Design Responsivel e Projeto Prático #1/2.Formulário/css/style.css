@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Maven Pro';
+}
+
+.center{
+    width: 1280px;
+}
+
+.header{
+    background-color: #242343;
+    width: 100%;
+    height: 90px;
+}
+
+.header img{
+    margin: 30px;
+}
+
+.container-banner{
+    background-image: url(../images/header_bg.png);
+    height: 530px;
+    width: 100%;
+}
+
+.container-banner > .center{
+    height: 100%;
+}
+
+.form{
+    background-color: white;
+    width: 400px;
+    height: calc(100% + 40px);
+    float: right;
+    position: relative;
+    top: -20px;
+    border: rgba(204, 204, 204, 0.527) 10px solid;
+    background-clip: padding-box;
+    padding: 10px;
+}
+
+.form h2{
+    font-size: 20px;
+    font-weight: 550;
+    color: rgb(107, 96, 96);
+    text-align: center;
+    font-weight: normal;
+}
+
+.input-container{
+    margin-top: 20px;
+}
+
+.input-container label, form p{
+    display: inline-block;
+    width: 100%;
+    color: #BBB;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.input-container input[type=text]{
+    margin-top: 5px;
+    width: 100%;
+    height: 50px;
+    font-size: 22px;
+    outline: none;
+    border: 1px solid #BBB;  
+}
+
+form p{
+    margin: 20px 0;
+}
+
+form .input-submit{
+    text-align: center;
+}
+
+form input[type=submit]{
+    background-color: #363a6d;
+    text-align: center;
+    width: 280px;
+    height: 56px;
+    color: white;
+    display: inline-block;
+    font-size: 23px;
+    border: none;
+}

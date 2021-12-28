@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box{
+    text-align: center;
+}
+
+div.box img{
+    position: relative;
+    width: 40%;
+    box-shadow: 1px 1px 25px 1px black;
+    animation-name: imagem;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transition: 2s transform 1s;
+    transform: rotate();
+}
+
+@keyframes imagem {
+    0% {top: 0;}
+    50% {top: 50px; box-shadow: 1px 1px 25px 1px gold;}
+    100% {top: 0;}
+}
+
+/*
+div.box p{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(6, 255, 6);
+    z-index: 2;
+    transition: 1s;
+}
+
+div.box p:hover{
+    opacity: 0.4;
+}*/

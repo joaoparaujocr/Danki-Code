@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+}
+
+body, html{
+    height: 100%;
+}
+
+/* Classes gerais */
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.clear{clear: both;}
+/* **************** */
+
+/* Header */
+header{
+    padding: 20px 2%;
+}
+
+.logo img{
+    width: 234px;
+    float: left;
+}
+
+nav.menu-mobile{
+    display: none;
+}
+
+header nav.menu-desktop{
+    float: right;
+    margin-top: 15px;
+}
+
+header nav.menu-desktop ul{
+    list-style-type: none;
+}
+
+header nav.menu-desktop li{
+    float: left;
+    margin: 0 35px;
+    text-transform: uppercase;
+}
+
+header nav.menu-desktop a{
+    text-decoration: none;
+    color: #b4b4b4;
+    font-size: 14px;
+}
+/* ********************** */
+
+/* Section mosaico */
+section.mosaico{
+    width: 100%;
+}
+
+section.mosaico > .container .box-principal{
+    width: calc(100% / 6);
+    float: left;
+}
+
+.box-principal .img{
+    padding-top: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(160, 160, 160);
+    border: 3px solid white;
+}
+/* ************************************* */
+
+/* Section serviço */
+section.servico > .container{
+    max-width: 900px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    bottom: 30px;
+    text-align: center;
+}
+
+.servico .box-servico{
+    background-image: url(../images/icone_dente.png);
+    background-size: 12px 12px;
+    background-position: 50% 95%;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.servico .box-servico:nth-of-type(1),
+.servico .box-servico:nth-of-type(3){
+    background-color: #576975;
+    padding: 30px 2%;
+    width: 30%;
+}
+
+.servico .box-servico:nth-of-type(2){
+    width: 40%;
+    padding: 60px 2%;
+    background-color: #688293;
+}
+/* ********************************** */
+
+/* Section Perfil */
+section.section-perfil{
+    padding: 30px 2%;
+}
+
+section.section-perfil .container{
+    max-width: 800px;
+}
+
+.box-main{
+    padding-top: 50%;
+    position: relative;
+}
+
+.box-perfil-text{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+.img-perfil{
+    width: 40%;
+    height: 100%;
+    background-image: url(../images/img_perfil.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.box-perfil-text .text-perfil{
+    width: 60%;
+    padding: 10px 30px;
+}
+
+.text-perfil h2{
+    color: #698293;
+    font-size: 18px;
+}
+
+.text-perfil p{
+    color: #4b4b4b;
+    margin-top: 8px;
+    font-size: 15px;
+}
+/* ***************** */
+
+@media screen and (max-width: 768px){
+    nav.menu-desktop{
+        display: none
+    }
+
+    nav.menu-mobile{
+        float: right;
+        display: block;
+    }
+
+    section.servico > .container{
+        flex-direction: column;
+    }
+
+    .servico .box-servico:nth-of-type(1),
+    .servico .box-servico:nth-of-type(3){
+    width: 90%;
+    max-width: 400px;
+    padding: 20px 2%;
+    }
+
+    .servico .box-servico:nth-of-type(2){
+        width: 93%;
+        max-width: 440px;
+        padding: 30px 2%;
+    }
+
+    .box-perfil-text{
+        /* position: absolute;
+        left: 0;
+        top: 0;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        align-items: center; */
+        text-align: center;
+        display: inline-block;
+    }
+
+    .img-perfil{
+        padding-top: 60%;
+        display: inline-block;
+        width: 50%;
+        height: auto;
+    }
+    
+    .box-perfil-text .text-perfil{
+        width: 100%;
+        display: inline-block;
+        text-align: justify;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .img-perfil{
+        padding-top: 100%;
+        display: inline-block;
+        width: 80%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo img{
+        width: 200px;
+        float: left;
+    }
+}

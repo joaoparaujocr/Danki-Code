@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kanit";
+}
+
+html, body{
+    height: 100%;
+}
+
+.center{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    width: 100%;
+    height: 90px;
+    background-color: #262343;
+}
+
+.header img{
+    margin: 30px;
+}
+
+.container-banner{
+    background-image: url("../images/header_bg.png");
+    width: 100%;
+    height: 500px;
+}
+
+.container-banner > .center{
+    height: 100%;
+}
+
+.form{
+    background-color: white;
+    height: calc(100% + 60px);
+    width: 400px;
+    float: right;
+    position: relative;
+    top: -30px;
+    padding: 20px;
+    border: rgba(204, 204, 204, 0.404) solid 8px;
+    background-clip: padding-box;
+}
+
+.form h2{
+    font-weight: normal;
+    text-align: center;
+    color: #a09e9e;
+    font-size: 23px;
+}
+
+.input-text{
+    margin-top: 20px;
+}
+
+.input-text label, .form p{
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 5px;
+    color: #ccc;
+    font-size: 20px;
+}
+
+.input-text input[type=text]{
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    outline: none;
+}
+
+.form p{
+    display: inline-block;
+    width: 100%;
+    margin-top: 5px;
+    color: #ccc;
+    font-size: 20px;
+}
+
+.input-submit{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.input-submit input[type=submit]{
+    width: 200px;
+    height: 50px;
+    color: white;
+    font-size: 20px;
+    background-color: #262343;
+    border: 0;
+    cursor: pointer;
+}
+
+.input-submit input[type=submit]:hover{
+    background-color: #4d487e;
+}
+
+.list{
+    float: left;
+    width: 619px;
+    height: 270px;
+    background-color: rgba(33, 31, 53, 0.705);
+    margin-top: 40px;
+    padding: 60px;
+    position: relative;
+    top: 15%;
+}
+
+.list ul{
+    list-style-position: inside;
+}
+
+.list ul li{
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.container-2{
+    padding-top: 60px;
+    background-color: #a09e9e;
+    text-align: center;
+}
+
+.container-2 h2{
+    font-weight: normal;
+}
+
+.container-2 p{
+    width: 690px;
+    display: inline-block;
+    text-align: justify;
+    margin: 15px 0;
+}
+
+.arrow{
+    background-image: url(../images/arrow.png);
+    width: 64px;
+    height: 64px;
+    position: relative;
+    top: 32px;
+    margin: 0 auto;
+}

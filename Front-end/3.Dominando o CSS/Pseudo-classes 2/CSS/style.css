@@ -1,0 +1,58 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    height: 100%;
+}
+
+ul{
+    list-style-position: inside;
+}
+
+/*
+ul li:nth-of-type(2){
+    color: red;
+}*/
+
+/*
+ul li:nth-child(3){
+    color: red;
+}*/
+
+.box{
+    width: 100%;
+}
+
+.item{
+    box-sizing: border-box;
+    float: left;
+    width: 33.3%;
+    height: 400px;
+    background-color: red;
+    border: 1px solid black;
+}
+
+.p::after{
+    content: ' Guilherme';
+    margin-left: 19px;
+}
+
+.p::before{
+    content: 'Guilherme ';
+}
+
+/*
+.box div:not(.one){
+    background-color: gold;
+}*/
+/*
+.box div:last-of-type, .box p:last-of-type{
+    background-color: green;
+}*/
+/*
+.box .item:last-of-type p{
+    color: white;
+}*/
+/*:last-child*/

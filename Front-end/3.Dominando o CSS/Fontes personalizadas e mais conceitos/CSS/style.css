@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Importando fonts*/
+@font-face {
+    font-family: "Minha fonte";
+    src: url(../fonts/OpenSans-Light.ttf);
+}
+
+
+html, body{
+    height: 100%;
+    font-family: "Minha fonte";
+}
+
+form > *{
+    font-family: "Minha fonte";
+}
+
+
+/*Importando fonts*/
+/*
+.box p{
+    font-family: "Minha fonte";
+}
+
+.text{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}*/

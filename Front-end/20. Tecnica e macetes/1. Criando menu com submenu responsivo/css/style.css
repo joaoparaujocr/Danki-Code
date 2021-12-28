@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+.container{
+    max-width: 1200px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+header{
+    padding: 10px 2%;
+    background: #5656e7;
+}
+
+.logo{
+    float: left;
+    color: white;
+}
+
+nav.menu-desktop{
+    float: right;
+    line-height: 30px;
+}
+
+nav > ul > li{
+    position: relative;
+    font-size: 14px;
+    padding: 0 15px;
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+ul.sub-menu {
+    position: absolute;
+    top: 28px;
+    left: 0;
+    background-color: rgb(2, 2, 2);
+    list-style-type: none;
+    width: 60px;
+    text-align: center;
+}
+
+.clear{
+    clear: both;
+}

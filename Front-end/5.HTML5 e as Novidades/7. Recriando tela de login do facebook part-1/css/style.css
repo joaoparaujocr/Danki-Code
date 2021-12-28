@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+
+html, body{
+    height: 100%;
+}
+
+.clear{clear: both;}
+
+.center{
+    width: 900px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+header{
+    background-color: #36548e;
+    padding: 8px 0;
+}
+
+div.logo{
+    float: left;
+    color: white;
+}
+
+.logo > h2{
+    font-size: 29px;
+    margin-top: 23px;
+}
+
+form.form-login{
+    float: right;
+}
+
+.form-login .form-element{
+    display: inline-block;
+    margin: 5px 0 0 0;
+}
+
+.form-element label{
+    margin-bottom: 3px;
+    display: block;
+    font-size: 12px;
+    color: white;
+}
+
+.form-element input[type=email],
+.form-element input[type=password]{
+    outline: 0;
+}
+
+.form-element input[type=submit]{
+    background-color: #4f699c;
+    padding: 3px 5px;
+    color: white;
+    border: 0;
+    cursor: pointer;
+}
+
+.form-element input[type=submit]:hover{
+    background-color: #1d376b;
+}
+
+form.form-login a{
+    display: inline-block;
+    color: white;
+    font-size: 11px;
+    position: relative;
+    left: 167px;
+    text-decoration: none;
+}
+
+form.form-login a:hover{
+    text-decoration: underline;
+}
+
+section.main{
+    background: linear-gradient(white, #D3D8E8);
+    width: 100%;
+    padding: 20px 0;
+}
+
+.img-fluxo{
+    float: left;
+    width: 50%;
+}
+
+.img-fluxo p{
+    font-size: 21px;
+    text-align: left;
+}
+
+.img-fluxo img{
+    width: 100%;
+}
+
+.abrir-conta{
+    float: right;
+    width: 50%;
+    padding-left:28px;
+}
+
+.abrir-conta > h1{
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+form.criar-conta{
+    margin-top: 15px;
+}
+
+.w50{
+    float: left;
+    width: 50%;
+    padding: 0 5px;
+    margin-bottom: 5px;
+}
+
+.w100{
+    padding: 0 5px;
+    width: 100%;
+    float: left;
+    margin-bottom: 5px;
+}
+
+form.criar-conta input{
+    width: 100%;
+}
+
+form.criar-conta input[type=email],
+form.criar-conta input[type=text],
+form.criar-conta input[type=password]{
+    height: 45px;
+    border-radius: 3px;
+    font-size: 20px;
+    padding-left: 6px;
+    outline: none;
+    border: 2px #ccc solid;
+}
+
+form.criar-conta input[type=submit]{
+    height: 45px;
+    background: linear-gradient(#67ae55, #578843);
+    color: white;
+    cursor: pointer;
+    max-width: 200px;
+    font-size: 20px;
+    border: 0;
+    border-radius: 5px;
+}
