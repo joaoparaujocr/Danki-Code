@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue Js</title>
+</head>
+
+<body>
+
+    <!-- Exemplo 1 -->
+    <!-- <div id="app" v-html="message">
+        {{ message }}
+    </div> -->
+
+    <!-- Exemplo 2 -->
+    <div id="app" v-if="visivel">
+        <h1>Posso começar a rodar meu aplicativo</h1>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script>
+        //Exemplo 1
+        /*
+        let app = new Vue({
+            el: '#app',
+            data: {
+                message: '<h1>Olá mundo!</h1>'
+            }
+        })
+        */
+
+        let app = new Vue({
+            el: '#app',
+            data: {
+                visivel: true
+            }
+        })
+    </script>
+</body>
+
+</html>
