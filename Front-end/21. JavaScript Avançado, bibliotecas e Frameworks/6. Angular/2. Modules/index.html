@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angula Js</title>
+</head>
+<body>
+    <!-- Exemplo 1 -->
+    <!-- <div ng-app="myApp" ng-controller="controlador">
+        <p>{{firstName}}</p>
+    </div> -->
+    
+    <!-- Exemplo 2 -->
+    <div ng-app="myApp" w3-test-directive>
+
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+
+    <script>
+        // Exemplo 1
+        /*
+        let app = angular.module("myApp", []);
+
+        app.controller("controlador", function($scope) {
+            $scope.firstName = 'John';
+            $scope.lastName = 'Doe';
+        }); */
+
+        //Exemplo 2
+        let app = angular.module("myApp", [])
+
+        app.directive("w3TestDirective", function() {
+            return {
+                template : '<p style="color: red;">Hello World</p>'
+            }
+        })
+    </script>
+</body>
+</html>
