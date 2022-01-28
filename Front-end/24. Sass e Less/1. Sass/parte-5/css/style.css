@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.sucesso, div {
+  width: 100px;
+  background: green;
+  height: 100px;
+}
+/*# sourceMappingURL=style.css.map */

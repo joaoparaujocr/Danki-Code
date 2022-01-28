@@ -1,0 +1,10 @@
+$corBackground: gray;
+
+div {
+    background-color: $corBackground;
+    width: 300px;
+    height: 300px;
+    a {
+        color: red;
+    }
+}
